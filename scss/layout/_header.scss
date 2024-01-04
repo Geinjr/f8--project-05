@@ -1,9 +1,13 @@
+%flexItemCenter {
+    display: flex;
+    align-items: center;
+}
+
 .header {
     background: #eeeeee;
 }
 .top-bar {
-    display: flex;
-    align-items: center;
+    @extend %flexItemCenter;
     padding: 30px 0;
 }
 
@@ -32,13 +36,11 @@
 }
 
 .top-act {
-    display: flex;
-    align-items: center;
+    @extend %flexItemCenter;
     gap: 20px;
 
     &__group {
-        display: flex;
-        align-items: center;
+        @extend %flexItemCenter;
         min-width: 50px;
         height: 50px;
 
@@ -53,9 +55,13 @@
 
     &__btn {
         padding: 13px 20px;
-        display: flex;
-        align-items: center;
+        @extend %flexItemCenter;
         gap: 10px;
+        cursor: pointer;
+    }
+    &__btn:hover {
+        background: rgb(240, 158, 158);
+        border-radius: inherit;
     }
 
     &__title {
@@ -65,7 +71,7 @@
     }
 
     &__separate {
-        width: 1px;
+        width: 3px;
         height: 30px;
         background: #ededf6;
     }
@@ -75,5 +81,6 @@
         height: 50px;
         border-radius: 8px;
         display: block;
+        cursor: pointer;
     }
 }
