@@ -1408,6 +1408,7 @@ html {
   left: 0;
   padding-top: 54px;
   width: min(1240px, 100%);
+  display: none;
 }
 .dropdown__inner {
   --inner-padiing: 30px;
@@ -1444,7 +1445,7 @@ html {
   column-gap: 14px;
 }
 .menu-column + .menu-column {
-  margin-top: var(--inner-padiing);
+  margin-top: 22px;
 }
 .menu-column__icon {
   flex-shrink: 0;
@@ -1452,19 +1453,24 @@ html {
   height: 36px;
   position: relative;
 }
+@media (max-width: 1199.98px) {
+  .menu-column__icon {
+    display: none;
+  }
+}
 .menu-column__content {
   flex: 1;
 }
 .menu-column__icon-1 {
   width: 30px;
   height: 30px;
-  object-fit: cover;
+  object-fit: contain;
 }
 .menu-column__icon-2 {
   position: absolute;
   width: 24px;
   height: 24px;
-  object-fit: cover;
+  object-fit: contain;
   right: 0;
   bottom: 0;
   filter: var(--menu-column-icon-color);
