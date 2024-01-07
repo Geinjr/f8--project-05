@@ -1484,10 +1484,10 @@ html {
 .menu-column__list {
   margin-top: 19px;
 }
-.menu-column__item:hover .sub-menu {
+.menu-column__item--active .sub-menu {
   display: grid;
 }
-.menu-column__item:hover > .menu-column__link {
+.menu-column__item--active > .menu-column__link, .menu-column__item:hover > .menu-column__link {
   color: rgb(228, 22, 228);
   font-weight: 500;
 }

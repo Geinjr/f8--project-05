@@ -89,11 +89,11 @@
     }
 
     &__item {
-        &:hover .sub-menu {
+        &--active .sub-menu {
             display: grid;
         }
     }
-
+    &__item--active > &__link,
     &__item:hover > &__link {
         color: rgb(228, 22, 228);
         font-weight: 500;
