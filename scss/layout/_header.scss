@@ -101,6 +101,7 @@
 
             overflow-y: auto;
             height: calc(100% - 40px);
+            overscroll-behavior: contain;
         }
 
         @include abstracts.breakpoint(md) {
