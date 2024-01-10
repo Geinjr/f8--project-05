@@ -28,7 +28,7 @@
     &:not(&--liked) &__icon--liked {
         display: none;
     }
-    &--liked .&__icon {
+    &--liked &__icon {
         display: none;
     }
 
