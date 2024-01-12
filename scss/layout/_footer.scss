@@ -4,6 +4,7 @@
     margin-top: 60px;
     padding: 60px 0;
     background: var(--footer-bg-color);
+    font-size: 1.4rem;
 
     &__row {
         display: grid;
@@ -20,7 +21,6 @@
     }
     &__desc {
         margin-top: 30px;
-        font-size: 1.5rem;
         line-height: 1.4;
         @include abstracts.screen(lg) {
             width: min(400px, 100%);
@@ -28,7 +28,6 @@
     }
     &__help-text {
         margin-top: 40px;
-        font-size: 1.4rem;
     }
     &__heading {
         text-transform: uppercase;
@@ -97,6 +96,7 @@
 
         @include abstracts.screen(md) {
             width: 50%;
+            font-size: 1.6rem;
         }
         @include abstracts.screen(sm) {
             flex: 1;
@@ -112,10 +112,6 @@
             flex-direction: column-reverse;
             gap: 30px;
         }
-    }
-
-    &__copyright {
-        font-size: 1.4rem;
     }
 
     &__socials {
@@ -134,6 +130,10 @@
         filter: grayscale(50%);
         transition: translate, filter;
         transition-duration: 0.3s;
+        @include abstracts.screen(sm) {
+            width: 40px;
+            height: 40px;
+        }
 
         &--facebook {
             background: #4863a9;
@@ -164,5 +164,9 @@
         width: 14px;
         filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7482%) hue-rotate(72deg) brightness(99%)
             contrast(99%);
+
+        @include abstracts.screen(sm) {
+            width: 18px;
+        }
     }
 }
