@@ -2,11 +2,11 @@
 
 html {
     --text-color: #1a162e;
-    --icon--color: brightness(0) saturate(100%) invert(8%) sepia(13%) saturate(3379%) hue-rotate(212deg) brightness(95%)
+    --icon-color: brightness(0) saturate(100%) invert(8%) sepia(13%) saturate(3379%) hue-rotate(212deg) brightness(95%)
         contrast(95%);
     --body-bg: #f6f6f6;
     --header-bg-color: #eee;
-    --footer-bg-color:(var(--header-bg-color))
+    --footer-bg-color: var(--header-bg-color);
     --top-act-group-bg-color: #fff;
     --top-act-group-shadow: rgba(237, 237, 246, 0.2);
     --top-act-group-separate: #ededf6;
@@ -45,12 +45,18 @@ html {
     --filter-form-bg: #fff;
     --filter-form-shadow: rgba(200, 200, 200, 0.4);
     --filter-form-tag-bg: #f8f8fb;
-    
+
     // auth
-    --auth-content-bg:#fff;
+    --auth-content-bg: #fff;
     @include abstracts.screen(md) {
-        --auth-intro-bg:#fff;
+        --auth-intro-bg: #fff;
         // forrm
-        --form-placeholder-color:#d2d1d6;
-}
+        --form-placeholder-color: #d2d1d6;
+    }
+
+    // products
+    --product-detail-bg: #fff;
+    //  Breadcrumbs
+    --breadcrumbs-bg: #f6f6f6;
+    --breadcrumbs-shadow: rgba(237, 237, 246, 0.2);
 }
