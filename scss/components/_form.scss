@@ -198,7 +198,7 @@ $error-color: #ed4337;
         background: var(--form-tag-bg);
         font-size: 1.4rem;
         font-weight: 500;
-        line: height 1.42; /* 142.857% */
+        line-height: 1.42; /* 142.857% */
         transition: color 0.25s;
 
         &:hover {

@@ -10,11 +10,14 @@
 
 .product-container {
     margin-top: 30px;
+    @include abstracts.screen(md) {
+        margin-top: 20px;
+    }
 }
 
 .prod-info__content {
     border-radius: 20px;
-    background: #fff;
+    background: var(--product-detail-info-content-bg);
 }
 
 .prod-preview {
@@ -75,14 +78,14 @@
         object-fit: contain;
         border: 1.5px solid rgb(175, 171, 178);
         border-radius: 8px;
-        cursor: pointer;
         opacity: 0.9;
         transition: opacity border-color;
         transition-duration: 0.3s;
 
-        &:hover {
+        &:not(&--current):hover {
             opacity: 1;
-            border-color: rgb(63, 61, 63);
+            border-color: rgb(14, 129, 237);
+            cursor: pointer;
         }
 
         &--current {
@@ -94,6 +97,7 @@
 
 .prod-info {
     background: var(--product-detail-info-bg);
+    border-radius: 10px;
     padding: 60px;
 
     @include abstracts.screen(xxl) {
@@ -121,7 +125,7 @@
     }
 
     &__tag {
-        background: #ededf6;
+        background: var(--product-detail-tag-bg);
     }
 
     &__card {
@@ -144,6 +148,7 @@
     }
 
     &__tax {
+        border-radius: 4px;
         padding: 2px 8px;
         margin-left: 10px;
         color: #67b044;
@@ -187,10 +192,6 @@
     display: flex;
     gap: 16px;
     margin-top: 30px;
-
-    @include abstracts.screen(md) {
-        margin-top: 20px;
-    }
 
     &__icon {
         align-self: flex-start;
