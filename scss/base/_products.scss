@@ -114,6 +114,10 @@
         margin-top: 0;
     }
 
+    &__tag {
+        background: var(--product-detail-tag-bg);
+    }
+
     &__heading {
         font-size: 2.6rem;
         font-weight: 500;
@@ -122,10 +126,6 @@
 
     &__label {
         margin-top: 30px;
-    }
-
-    &__tag {
-        background: var(--product-detail-tag-bg);
     }
 
     &__card {
@@ -208,5 +208,47 @@
         font-size: 1.4rem;
         font-weight: 400;
         line-height: 1.42; /* 142.857% */
+    }
+}
+
+.prod-tab {
+    &__list {
+        display: flex;
+        align-items: center;
+        margin: 0 --30px;
+    }
+
+    &__item {
+        padding: 0 30px;
+        color: #9e9da8;
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 1.45; /* 145.455% */
+
+        &--current {
+            color: inherit;
+        }
+    }
+
+    &__content {
+        padding-top: 30px;
+    }
+
+    &__content {
+        display: none;
+
+        &--current {
+            display: block;
+        }
+    }
+}
+
+.prod-content {
+    &__heading {
+        color: #1a162e;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 1.41; /* 141.667% */
+        margin-bottom: 30px;
     }
 }
