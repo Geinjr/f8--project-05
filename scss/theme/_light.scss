@@ -50,9 +50,9 @@ html {
     --auth-content-bg: #fff;
     @include abstracts.screen(md) {
         --auth-intro-bg: #fff;
-        // forrm
-        --form-placeholder-color: #d2d1d6;
     }
+    // forrm
+    --form-placeholder-color: #d2d1d6;
 
     // products detail
     --product-detail-bg: #fff;
@@ -77,4 +77,10 @@ html {
 
     // review car ;
     --review-card-bg: #fafafd;
+    @include abstracts.screen(md) {
+        --review-card-bg: #fff;
+    }
+
+    // text content
+    --text-content-hr-bg: #ebebed;
 }

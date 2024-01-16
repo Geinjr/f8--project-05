@@ -256,13 +256,17 @@
             display: block;
         }
     }
+
+    &__text-content {
+        margin-top: -20px;
+    }
 }
 
 .prod-content {
     &__heading {
         color: #1a162e;
-        font-size: 2.4rem;
-        font-weight: 700;
+        font-size: 2.2rem;
+        font-weight: 600;
         line-height: 1.41; /* 141.667% */
         margin-bottom: 30px;
     }
