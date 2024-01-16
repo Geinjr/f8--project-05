@@ -2055,6 +2055,11 @@ html {
   border-color: #d2d1d6;
   border-style: solid;
 }
+.act-dropdown__separate {
+  margin: 20px 0;
+  height: 1px;
+  background: rgb(255, 253, 253);
+}
 .act-dropdown__row {
   display: flex;
   align-items: center;
