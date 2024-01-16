@@ -223,8 +223,14 @@
         padding: 13px;
     }
 
-    &__btn {
+    &__btn-wrap {
         position: relative;
+
+        &:hover .act-dropdown {
+            display: block;
+        }
+    }
+    &__btn {
         @extend %flexItemCenter;
         gap: 10px;
         padding: 13px 20px;
@@ -285,17 +291,27 @@
 
 .act-dropdown {
     position: absolute;
-    top: 60px;
-    right: -60px;
+    top: 45.5px;
+    right: -108px;
     width: min(550px, 100vw);
+    padding-top: 30px;
+    display: none;
 
     &__inner {
+        position: relative;
         padding: 30px;
         border-radius: 20px;
         background: var(--header-act-dropdown-bg);
         box-shadow: 0px 40px 90px 20px var(--header-act-dropdown-shadown);
     }
 
+    &__arrow {
+        position: absolute;
+        top: -18px;
+        right: 140px;
+        height: 20.5px;
+        filter: var(--dropdown-arrow-color);
+    }
     &__top {
         display: flex;
         align-items: center;
