@@ -2692,7 +2692,6 @@ html {
 }
 .btn--smail {
   height: 40px;
-  padding: 0 16px;
 }
 .btn + .btn:not(.btn--no-margin) {
   margin-left: 20px;
@@ -3837,6 +3836,9 @@ html {
   font-weight: 500; /* Fix: Remove extra zero */
   line-height: 1.46;
 }
+.cart-item__input-btn {
+  display: flex;
+}
 .cart-item__total-price {
   font-size: 2.2em;
   font-weight: 700;
@@ -3866,6 +3868,18 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
+}
+@media (max-width: 767.98px) {
+  .user-address__top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 767.98px) {
+  .user-address__btn {
+    height: 46px;
+  }
 }
 .user-address__title {
   font-size: 1.8rem;
@@ -3877,10 +3891,23 @@ html {
   font-weight: 400;
   line-height: 1.46; /* 146.667% */
 }
+.user-address__messages {
+  margin-top: 30px;
+  font-weight: 500;
+}
+.user-address__link {
+  color: #0071dc;
+}
 
 .address-card {
   margin-top: 30px;
   display: flex;
+  gap: 16px;
+}
+@media (max-width: 767.98px) {
+  .address-card {
+    flex-direction: column;
+  }
 }
 .address-card__left {
   flex: 1;
@@ -3893,6 +3920,7 @@ html {
   line-height: 1.44; /* 144.444% */
 }
 .address-card__desc {
+  width: min(520px, 90%);
   margin-top: 4px;
   font-size: 1.5rem;
   font-weight: 400;
@@ -3906,6 +3934,12 @@ html {
   list-style: disc inside;
   font-weight: 400;
   line-height: 1.42; /* 142.857% */
+}
+@media (max-width: 575.98px) {
+  .address-card__list {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 .address-card__list-item {
   margin-left: 8px;
@@ -3922,6 +3956,18 @@ html {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.44; /* 144.444% */
+}
+.address-card__checkbox-input {
+  appearance: none;
+}
+.address-card__checkbox-input::before {
+  content: url("../icons/checkbox-uncheck.svg");
+}
+.address-card__checkbox-input:not(:checked)::before {
+  filter: var(--icon-color);
+}
+.address-card__checkbox-input:checked::before {
+  content: url("../icons/checkbox-checked.svg");
 }
 
 /*# sourceMappingURL=main.css.map */
