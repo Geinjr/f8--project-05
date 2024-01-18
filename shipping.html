@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" >
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,13 +40,13 @@
                 <!-- breaddcrumbs -->
                 <div class="checkout-container">
                     <ul class="breadcrumbs checkout-page__breadcrumbs">
-                        <li>
+                        <li class=" class="form__option--current>
                             <a href="./checkout.html" class="breadcrumbs__link"
                                 >Home
                                 <img src="./assets/icons/arrow-right.svg" alt="" />
                             </a>
                         </li>
-                        <li>
+                        <li class=" class="form__option--current>
                             <a href="#!" class="breadcrumbs__link"
                                 >Checkout
                                 <img src="./assets/icons/arrow-right.svg" alt="" />
@@ -55,7 +55,7 @@
 
                        
 
-                        <li>
+                        <li class=" class="form__option--current>
                             <a href="#!" class="breadcrumbs__link breadcrumbs__link--current"
                                 >Shipping
                             </a>
@@ -478,9 +478,34 @@
                                 id="  "
                                 placeholder="City/District/Town"
                                 id="City"
-                                class="form__input"
+                                class="form__input  js-toggle"
+                                toggle-target="#city-dialog"
+
                             />
                             <img src="./assets/icons/error.svg" alt="" class="form__input-icon-error" />
+                            <div id="city-dialog" class="form__select-dialog hide">
+                                <div class="form__search">
+                                    <input type="text" placeholder="Search" class="form__search-input">
+                                    <img src="./assets/icons/search.svg" alt="" class="form__search-icon">
+                                </div>
+                                <ul class="form__options-list">
+                                    <li class="form__option form__option--current" >London</li>
+                                    <li class="form__option" >Manchester</li>
+                                    <li class="form__option" >Liverpool</li>
+                                    <li class="form__option" >Oxford</li>
+                                    <li class="form__option" >Birminghamr</li>
+                                    <li class="form__option" >Cambridge</li>
+                                    <li class="form__option" >Brighton</li>
+                                    <li class="form__option" >Newcastle</li>
+                                    <li class="form__option" >Bournemouth</li>
+                                    <li class="form__option" >Leeds</li>
+                                    <li class="form__option" >Bristol</li>
+                                    <li class="form__option" >Southampton</li>
+                                    <li class="form__option" >Wolverhampton</li>
+                                    <li class="form__option" >leicester</li>
+                                    <li class="form__option" >Sheffield</li>
+                                </ul>
+                            </div>
                         </div>
                         <p class="form__error">Phone needs at least 11 characters</p>
                     </div>
