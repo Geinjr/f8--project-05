@@ -1779,6 +1779,7 @@ html {
 
 .header {
   background: var(--header-bg-color);
+  z-index: 2;
 }
 @media (max-width: 991.98px) {
   .header {
@@ -2724,6 +2725,10 @@ html {
   background: transparent;
   border: 1px solid #d2d1d6;
 }
+.btn--danger {
+  color: #fff;
+  background: rgb(219, 93, 93);
+}
 .btn--rounded {
   border-radius: 99px;
 }
@@ -3101,11 +3106,22 @@ html {
     border-radius: 0;
   }
 }
+.form__dialog-heading {
+  padding: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
 .form__options-list {
   margin-top: 10px;
   flex: 1;
   overflow-y: auto;
   overscroll-behavior: contain;
+}
+@supports (-webkit-touch-callout: none) {
+  .form__options-list {
+    padding-bottom: 300px;
+  }
 }
 .form__option {
   padding: 8px 20px;
@@ -3121,7 +3137,8 @@ html {
 }
 @media (max-width: 991.98px) {
   .form__option {
-    padding: 14px 20px;
+    padding: 18px 30px;
+    font-size: 1.6rem;
   }
 }
 .form__close-dialog {
@@ -3129,7 +3146,7 @@ html {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 2px 18px;
+  padding: 12px 18px;
   opacity: 0.8;
 }
 .form__search {
@@ -3151,19 +3168,18 @@ html {
 }
 @media (max-width: 991.98px) {
   .form__search {
-    height: 42px;
+    height: 48px;
+  }
+  .form__search-icon {
+    width: 20px;
   }
 }
 @media (max-width: 575.98px) {
   .form__search {
-    flex-direction: row-reverse;
-    margin-top: 30px;
-  }
-  .form__search-icon {
-    margin-left: 0;
-  }
-  .form__search-input {
-    padding-left: 8px;
+    padding: 0 14px;
+    border: 1px solid #d2d1d6;
+    margin: 10px 30px 0;
+    border-radius: 10px;
   }
 }
 .form__error {
@@ -3344,7 +3360,7 @@ html {
   flex: 1;
   height: 100%;
   padding-left: 15px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.42; /* 142.857% */
 }
@@ -3577,10 +3593,10 @@ html {
 .modal__bottom {
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 50px;
   justify-content: flex-end;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
   padding-right: 20px;
 }
 @media (max-width: 767.98px) {
@@ -3590,7 +3606,7 @@ html {
 }
 @media (max-width: 575.98px) {
   .modal__bottom {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 }
 @media (max-width: 767.98px) {
