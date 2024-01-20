@@ -1,0 +1,91 @@
+.profile {
+    margin-bottom: 50px;
+
+    &-container {
+        margin-top: 30px;
+    }
+
+    &__sidebar {
+        padding-bottom: 30px;
+        border-radius: 20px;
+        background: #fff;
+        box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+        overflow: hidden;
+    }
+    // user
+    &-user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px 20px;
+        background: linear-gradient(180deg, rgba(26, 22, 46, 0) 0%, #1a162e 100%),
+            url("../img/profilebg.jpg") no-repeat center / cover;
+        // background: url("../img/profilebg.jpg") no-repeat center / cover;
+        box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+        color: #fff;
+
+        &__avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            background: #dfd2fa;
+            box-shadow: 0px 4px 14px 2px rgba(0, 0, 0, 0.08);
+            object-fit: cover;
+        }
+
+        &__name {
+            margin-top: 15px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 144.444%;
+        }
+
+        &__desc {
+            margin-top: 2px;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 146.667%;
+        }
+    }
+
+    // Menu
+    &-menu {
+        margin-top: 30px;
+        padding: 0 30px;
+
+        &__title {
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 144.444%;
+        }
+
+        &__list {
+            margin-top: 11px;
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            height: 32px;
+            font-size: 1.4rem;
+            line-height: 1.46;
+            transition: background-color 0.2s;
+            border-radius: 5px;
+            padding: 0 5px;
+
+            &:hover {
+                background: #dfdfe0;
+            }
+        }
+
+        &__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 24px;
+        }
+    }
+}
