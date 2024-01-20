@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Checkout Grocery mart</title>
+        <title>Favourite List Grocery mart</title>
         <!-- favicon -->
         <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
@@ -48,7 +48,7 @@
                         </li>
 
                         <li>
-                            <a href="#!" class="breadcrumbs__link breadcrumbs__link--current">Checkout </a>
+                            <a href="#!" class="breadcrumbs__link breadcrumbs__link--current">Favourite  </a>
                         </li>
 
              
@@ -57,8 +57,19 @@
                 <!--  check out-->
                 <div class="checkout-container">
                     <div class="row gy-xl-3">
-                        <div class="col-8 col-xl-12">
+                        <div class="col-12">
                             <div class="cart-info">
+                                <h1 class="cart-info__heading">Favourite List</h1>
+                                <p class="cart-info__desc">3 items</p>
+                                <div class="cart-info__check-all">
+                                    <label class="cart-info__checkbox">
+                                        <input
+                                            type="checkbox"
+                                            name="shipping-adress"
+                                            class="cart-info__checkbox-input"
+                                        />
+                                    </label>
+                                    </div>
                                 <div class="cart-info__list">
                                     <!-- cart item 1 -->
                                     <article class="cart-item">
@@ -243,46 +254,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 col-xl-12">
-                            <div class="cart-info">
-                                <div class="cart-info__row">
-                                    <span>Subtotal <span class="cart-info__sub-label">(items)</span>  </span>
-                                    <span>3 </span>
-                                </div>
-                                <div class="cart-info__row">
-                                    <span>Price <span class="cart-info__sub-label">(Total)</span></span>
-                                    <span>$191.65 </span> 
-                                </div>
-                                <div class="cart-info__row">
-                                    <span>Shipping  </span>
-                                    <span>$10.00 </span> 
-                                </div>
-                                <div class="cart-info__separate"></div>
-                                <div class="cart-info__row">
-                                    <span>Estimated Total </span>
-                                    <span>$201.65 </span> 
-                                </div>
-                                <a href="./shipping.html" class="cart-info__next-btn btn btn--primary btn--rounded">
-                                    Continue to checkout
-                                </a>
-                            </div>
-
-                            <div class="cart-info">
-                              <a href="#!">
-                                    <article class="gift-item">
-                                        <div class="gift-item__icon-wrap">
-                                            <img src="./assets/icons/gift.svg" alt="" class="gift-item__icon">
-                                        </div>
-                                        <div class="gift-item__content">
-                                            <div class="gift-item__title">Send this order as a gift.</div>
-                                            <div class="gift-item__desc">Available items will be shipped to your gift recipient.
-                                            </div>
-                                        </div>
-                                    </article>
-                              </a>
-                            </div>
-                            
-                        </div>
+                     
                     </div>
                 </div>
             </div>
