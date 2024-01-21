@@ -99,10 +99,12 @@
     gap: 14px;
     border-radius: 10px;
     border: 1px dashed #d2d1d6;
-    transition: border-color, color;
+    transition: border-color, color, filter;
     transition-duration: 0.2s;
 
     &:hover {
+        filter: brightness(0) saturate(100%) invert(32%) sepia(60%) saturate(5055%) hue-rotate(346deg) brightness(96%)
+            contrast(103%);
         border-color: #f82e23;
         color: #f82e23;
     }
@@ -112,10 +114,4 @@
         font-weight: 500;
         line-height: 1.42; /* 142.857% */
     }
-
-    // &__icon {
-    //     &:hover {
-    //         filter: #f82e23;
-    //     }
-    // }
 }
