@@ -101,6 +101,7 @@
     border: 1px dashed #d2d1d6;
     transition: border-color, color, filter;
     transition-duration: 0.2s;
+    min-height: 170px;
 
     &:hover {
         filter: brightness(0) saturate(100%) invert(32%) sepia(60%) saturate(5055%) hue-rotate(346deg) brightness(96%)

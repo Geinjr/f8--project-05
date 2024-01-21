@@ -1,5 +1,5 @@
 .account-info {
-    background: #f6f6f6;
+    background: var(--account-info-bg);
     padding: 10px;
     border-radius: 10px;
     display: flex;
@@ -14,7 +14,7 @@
         width: 54px;
         height: 54px;
         border-radius: 8px;
-        background: #fff;
+        background: var(--account-info-icon-bg);
     }
 
     &__title {
