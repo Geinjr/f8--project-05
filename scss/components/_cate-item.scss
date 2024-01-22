@@ -6,7 +6,7 @@
     height: 100%;
     background: var(--cate-item-bg);
     display: flex;
-    padding: 20px 26px;
+    padding: 20px;
 
     @include abstracts.screen(xl) {
         flex-direction: column;
@@ -18,8 +18,8 @@
 
     &__thumb {
         display: block;
-        width: 116px;
-        height: 116px;
+        width: 100px;
+        height: 100px;
         object-fit: contain;
         background: var(--cate-item-thumb-bg);
         border-radius: 8px;
